@@ -1,0 +1,130 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+index 8b137891791fe96927ad78e64b0aad7bded08bdc..2cbb167049cd3425f344e8ce0c095072b050b9c7 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1,121 @@
++<!doctype html>
++<html lang="es">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1" />
++    <title>Luis Alberto Ramón | Consultor Financiero</title>
++    <link rel="stylesheet" href="styles.css" />
++  </head>
++  <body>
++    <header class="topbar">
++      <div class="container topbar__inner">
++        <span class="brand">Luis Alberto Ramón | Consultor Financiero</span>
++        <a
++          class="btn btn--ghost"
++          href="https://wa.me/5210000000000?text=Hola%20Luis%2C%20quiero%20un%20diagn%C3%B3stico%20r%C3%A1pido%20de%20mi%20situaci%C3%B3n%20fiscal%20y%20financiera."
++          target="_blank"
++          rel="noopener noreferrer"
++        >
++          WhatsApp
++        </a>
++      </div>
++    </header>
+ 
++    <main>
++      <section class="hero">
++        <div class="container hero__content">
++          <p class="eyebrow">Consultoría financiera premium</p>
++          <h1>Transforma tus finanzas en decisiones estratégicas.</h1>
++          <p class="lead">
++            Diagnóstico claro, estrategia fiscal precisa y acompañamiento mensual para
++            crecer con orden y rentabilidad.
++          </p>
++          <div class="hero__actions">
++            <a class="btn btn--primary" href="#diagnostico">Diagnóstico</a>
++            <a class="btn btn--secondary" href="#servicios">Ver servicios</a>
++          </div>
++        </div>
++      </section>
++
++      <section class="benefits" id="diagnostico">
++        <div class="container">
++          <h2>Beneficios clave</h2>
++          <div class="grid grid--3">
++            <article class="card">
++              <h3>Más ganancias</h3>
++              <p>Optimiza tus flujos y detecta oportunidades de rentabilidad sostenida.</p>
++            </article>
++            <article class="card">
++              <h3>Menos impuestos</h3>
++              <p>Planeación fiscal inteligente con enfoque legal y preventivo.</p>
++            </article>
++            <article class="card">
++              <h3>Crecimiento firme</h3>
++              <p>Decisiones respaldadas por indicadores claros y metas realistas.</p>
++            </article>
++          </div>
++        </div>
++      </section>
++
++      <section class="services" id="servicios">
++        <div class="container">
++          <h2>Servicios especializados</h2>
++          <div class="grid grid--3">
++            <article class="service">
++              <h3>Estrategia fiscal</h3>
++              <p>Diseño de escenarios para minimizar riesgos y aprovechar incentivos.</p>
++            </article>
++            <article class="service">
++              <h3>Planeación financiera</h3>
++              <p>Proyecciones, presupuestos y control para decisiones con visibilidad.</p>
++            </article>
++            <article class="service">
++              <h3>Acompañamiento mensual tipo CFO</h3>
++              <p>Reuniones mensuales y reportes ejecutivos para un crecimiento sostenido.</p>
++            </article>
++          </div>
++        </div>
++      </section>
++
++      <section class="social-proof">
++        <div class="container">
++          <h2>Confianza respaldada</h2>
++          <div class="grid grid--3">
++            <blockquote class="quote">
++              <p>"Claridad total en nuestros números y una ruta estratégica realista."</p>
++            </blockquote>
++            <blockquote class="quote">
++              <p>"Redujimos carga fiscal sin improvisar, con decisiones sólidas."</p>
++            </blockquote>
++            <blockquote class="quote">
++              <p>"El acompañamiento mensual nos dio orden y tranquilidad."</p>
++            </blockquote>
++          </div>
++        </div>
++      </section>
++
++      <section class="cta">
++        <div class="container cta__content">
++          <div>
++            <h2>Agenda hoy y recibe un diagnóstico inicial.</h2>
++            <p>Un primer paso concreto para mejorar tu situación fiscal y financiera.</p>
++          </div>
++          <a
++            class="btn btn--primary btn--large"
++            href="https://wa.me/5210000000000?text=Hola%20Luis%2C%20quiero%20un%20diagn%C3%B3stico%20r%C3%A1pido%20de%20mi%20situaci%C3%B3n%20fiscal%20y%20financiera."
++            target="_blank"
++            rel="noopener noreferrer"
++          >
++            Hablar por WhatsApp
++          </a>
++        </div>
++      </section>
++    </main>
++
++    <footer class="footer">
++      <div class="container">
++        <p>© 2024 Luis Alberto Ramón. Todos los derechos reservados.</p>
++      </div>
++    </footer>
++  </body>
++</html>
+ 
+EOF
+)
